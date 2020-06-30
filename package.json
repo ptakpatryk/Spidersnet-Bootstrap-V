@@ -28,7 +28,6 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "bootstrap": "^5.0.0-alpha1",
-    "popper.js": "^1.16.1"
+    "foundation-sites": "^6.6.3"
   }
 }
