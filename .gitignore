@@ -1,8 +1,2 @@
 node_modules
-/assets
-/src
 .gitignore
-package.json
-package-lock.json
-postcss.config.js
-webpack.config.js
