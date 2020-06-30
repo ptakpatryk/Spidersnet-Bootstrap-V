@@ -1,5 +1,83 @@
+@import './customBootstrao.scss';
 @import '~bootstrap/scss/bootstrap';
 
-body {
-  background-color: red;
+// Header section
+
+.header {
+  height: 145px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 230px;
+    height: 60px;
+    background: url('../../assets/logo.png') no-repeat center;
+  }
+
+  &__contact {
+    &__number {
+      font-size: 1.1rem;
+      text-align: right;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+
+      span {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    &__icon {
+      width: 32px;
+      height: 32px;
+      background-repeat: no-repeat;
+      background-size: 80%;
+      background-position: center center;
+      transition: border-radius 0.3s ease-in-out;
+
+      &:first-of-type {
+        margin-right: 5px;
+      }
+
+      &--facebook {
+        background-color: #4267b2;
+        background-image: url('../../assets/facebook-logo.svg');
+      }
+
+      &--twitter {
+        background-color: #1da1f2;
+        background-image: url('../../assets/twitter-logo.svg');
+      }
+
+      &:hover {
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+// Navigation Bar
+
+nav {
+  height: 70px;
+
+  .container {
+    padding: 0 110px;
+  }
+
+  .nav__item {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
